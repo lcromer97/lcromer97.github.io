@@ -1,0 +1,22 @@
+{
+  "page_title": "Standard Operating Procedure",
+  "sop_title": "Standard Operating Procedure",
+  "sop_subtitle": "Follow these steps carefully",
+
+  "intro_text": "This guide will walk you through the process step by step.",
+  "important_note": "Read all steps before starting.",
+
+  "step1_title": "Step 1: Preparation",
+  "step1_text": "Make sure the device is powered on.",
+  "step1_caption": "Device showing power indicator",
+
+  "step2_title": "Step 2: Perform Action",
+  "step2_text": "Press and hold the main button for 3 seconds.",
+  "step2_warning": "Do not unplug the device during this step.",
+  "step2_caption": "Correct button location",
+
+  "completion_title": "Completion",
+  "completion_text": "You are finished when the green light appears.",
+
+  "print_button": "Download / Print PDF"
+}
