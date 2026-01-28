@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="page_title">SOP</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="assets/image/gerbercw-logo.png" alt="Company Logo" class="logo" />
+
+    <div class="header-text">
+      <h1 data-i18n="sop_title">Standard Operating Procedure</h1>
+      <p data-i18n="sop_subtitle">Follow these steps carefully</p>
+    </div>
+
+    <div class="language-container">
+        <select id="languageSwitcher" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="nb">Norsk (bokmål)</option>
+        </select>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section class="intro">
+      <p data-i18n="intro_text">
+        This guide will walk you through the process step by step.
+      </p>
+    </section>
+
+    <section class="callout info" data-i18n="important_note">
+      Read all steps before starting.
+    </section>
+
+    <!-- STEP 1 -->
+    <section class="step">
+      <h2 data-i18n="step1_title">Step 1: Preparation</h2>
+      <p data-i18n="step1_text">
+        Make sure the device is powered on.
+      </p>
+
+      <figure>
+        <img src="assets/step1.jpg" alt="[image] Device powered on">
+        <figcaption data-i18n="step1_caption">
+          Device showing power indicator
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="step">
+      <h2 data-i18n="step2_title">Step 2: Perform Action</h2>
+      <p data-i18n="step2_text">
+        Press and hold the main button for 3 seconds.
+      </p>
+
+      <div class="callout warning" data-i18n="step2_warning">
+        Do not unplug the device during this step.
+      </div>
+
+      <figure>
+        <img src="assets/step2.jpg" alt="[image] Button pressed">
+        <figcaption data-i18n="step2_caption">
+          Correct button location
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="completion">
+      <h2 data-i18n="completion_title">Completion</h2>
+      <p data-i18n="completion_text">
+        You are finished when the green light appears.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <button onclick="window.print()" data-i18n="print_button">
+      Download / Print PDF
+    </button>
+    <br />
+    <img src="assets/image/gerbercw-logo.png" alt="Company Logo" class="logo footer-logo" />
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

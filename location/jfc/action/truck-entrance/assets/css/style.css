@@ -1,0 +1,201 @@
+/* COLOURS */
+:root {
+  --text: #002744;
+  --caption: #555555;
+  --callout: 0, 71, 186;
+  --warning: 182, 8, 8;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../font/NotoSans/NotoSans-VariableFont_wdth\,wght.woff2') format('woff2');
+  src: url('../font/NotoSans/NotoSans-VariableFont_wdth\,wght.woff') format('woff');
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+body {
+  font-family: 'NotoSans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text);
+  background: #ffffff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.language-container {
+  width: 100%;
+}
+
+.language-container select {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.language-container select {
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.logo {
+  height: 48px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header select {
+  font-size: 1rem;
+}
+
+.header h1 {
+  font-weight: 900;
+}
+
+/* MAIN CONTENT */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* STEPS */
+.step {
+  margin-bottom: 2rem;
+}
+
+.step h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  margin-bottom: 0.75rem;
+}
+
+/* IMAGES */
+figure {
+  margin-top: 0.5rem;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--caption);
+  margin-top: 0.25rem;
+}
+
+/* CALLOUTS */
+.callout {
+  padding: 0.75rem 1rem;
+  border-left: 4px solid;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.callout.info {
+  border-color: rgb(var(--callout));
+  background: rgba(var(--callout), 0.1);
+}
+
+.callout.warning {
+  border-color: rgb(var(--warning));
+  background: rgba(var(--warning), 0.1);
+}
+
+/* COMPLETION */
+.completion {
+  padding: 1rem;
+  border-top: 2px solid #eee;
+}
+
+.completion h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.footer button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.footer-logo {
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .header {
+    padding: 1.5rem 2rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  .language-container {
+    width: auto;
+  }
+
+  .language-container select {
+    width: auto;
+  }
+}
+
+/* PRINT */
+@media print {
+  header select,
+  footer button {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  .callout {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-height: 400px;
+    object-fit: contain;
+  }
+}
